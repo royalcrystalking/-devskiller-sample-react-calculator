@@ -1,0 +1,17 @@
+{
+  "verification": {
+    "testNamePatterns": [".*verify_pack.*"],
+    "pathPatterns": ["**verify_pack**"]
+  },
+  "readOnlyFiles": [
+    "karma.conf.js",
+    "package.json",
+    "test/calculation.spec.js",
+    "test/view.spec.js"
+  ],
+  "hiddenFiles": [
+    "node_modules",
+    "node_modules/**",
+    "test-results.xml"
+  ]
+}

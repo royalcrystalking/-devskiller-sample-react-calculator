@@ -40,7 +40,6 @@ describe('verify_pack.Calculation [Verify]', function () {
 
         it('should return false for wrong input', function () {
             let calculation = new Calculation('432432*423*');
-
             expect(calculation.calculate()).to.false;
         });
 

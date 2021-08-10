@@ -52,8 +52,8 @@ module.exports = function (config) {
                         use: {
                             loader: 'babel-loader',
                             options: {
-                                presets: ['react', 'env', 'stage-0'],
-                                plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
+                                presets: ["@babel/preset-env", "@babel/preset-react"],
+                                plugins: ['@babel/proposal-class-properties']
                             }
                         }
                     }

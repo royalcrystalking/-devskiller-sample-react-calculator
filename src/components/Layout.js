@@ -17,11 +17,11 @@ export default class Layout extends React.Component {
          */
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         // @TODO Implement it
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
 
         let calculation = new Calculation(this.state.value);

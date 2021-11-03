@@ -1,38 +1,51 @@
 {
-  "name": "devskiller-react-calculator",
-  "version": "1.0.0",
+  "name": "devskiller-sample-react-calculator",
+  "author": "Devskiller",
   "private": true,
-  "scripts": {
-    "start": "webpack-dev-server --inline",
-    "test": "karma start ./karma.conf.js --single-run",
-    "test:watch": "karma start ./karma.conf.js",
-    "build": "webpack"
-  },
   "dependencies": {
-    "babel-loader": "^8.2.2",
-    "babel-plugin-add-module-exports": "^1.0.4",
-    "html-webpack-plugin": "^4.5.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.33",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "jest-junit": "^13.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.4.4",
+    "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "babel-polyfill": "^6.26.0",
-    "chai": "^4.1.2",
-    "karma": "^5.2.3",
-    "webpack-cli": "^3.3.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-junit-reporter": "^2.0.1",
-    "karma-mocha": "^2.0.1",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^4.0.2",
-    "mocha": "^8.2.1",
-    "react-test-renderer": "^17.0.1",
-    "webpack": "^4.42.2",
-    "webpack-dev-server": "^3.10.3"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest-junit": {
+    "outputName": "./test-results.xml",
+    "suiteName": "jest tests",
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}",
+    "ancestorSeparator": " › "
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

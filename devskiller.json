@@ -4,10 +4,8 @@
     "pathPatterns": ["**verify_pack**"]
   },
   "readOnlyFiles": [
-    "karma.conf.js",
     "package.json",
-    "test/calculation.spec.js",
-    "test/view.spec.js"
+    "App.test.tsx"
   ],
   "hiddenFiles": [
     "node_modules",

@@ -15,18 +15,21 @@ download the project code or clone the project’s Git repository and work
 locally.
 
 You can check out this short video to see the test from the [candidate's
-perspective](https://goo.gl/AXXaTT).
+perspective](https://devskiller.zendesk.com/hc/en-us/articles/360019534639-How-the-TalentScore-test-looks-like-from-the-candidate-perspective).
 
 This repo contains a sample project for JavaScript and below you can
 find a detailed guide for creating your own programming project.
 
 **Please make sure to read our [Getting started with programming
-projects](https://goo.gl/gkQU4J) guide first**
+projects](https://devskiller.zendesk.com/hc/en-us/articles/360019531059-Getting-started-with-Programming-Tasks) guide first**
 
 ## Technical details
 
 Any **JavaScript** project can be used as a programming task. We support **Karma**
 for unit tests and **npm** for managing external dependencies.
+
+It is also possible to use cli tools like `Vue CLI` or `Create React App` to
+scaffold a project.
 
 The project will be executed with the following command:
 
@@ -78,7 +81,7 @@ Here is an example project descriptor:
 ```
 
 You can find more details about the `devskiller.json` descriptor in our
-[documentation](https://goo.gl/uWXeCD).
+[documentation](https://devskiller.zendesk.com/hc/en-us/articles/360019530419-Programming-task-project-descriptor).
 
 ## Automatic verification with verification tests
 

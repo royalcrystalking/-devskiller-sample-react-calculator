@@ -1,8 +1,8 @@
-# Devskiller programming task sample - React
+# DevSkiller programming task sample - React
 
 ## Introduction
 
-With [Devskiller.com](https://devskiller.com) you can assess your candidates'
+With [DevSkiller.com](https://devskiller.com) you can assess your candidates'
 programming skills as a part of your recruitment process. We have found that
 programming tasks are the best way to do this and have built our tests
 accordingly. The way our test works is your candidate is asked to modify the
@@ -25,10 +25,11 @@ projects](https://devskiller.zendesk.com/hc/en-us/articles/360019531059-Getting-
 
 ## Technical details
 
-Any **JavaScript** project can be used as a programming task. We support **Karma**
-for unit tests and **npm** for managing external dependencies.
+Any **JavaScript** project can be used as a programming task. We support 
+**npm** for managing external dependencies, including your favorite unit test
+runner (be it **Jest** or **Karma**).
 
-It is also possible to use cli tools like `Vue CLI` or `Create React App` to
+It is also possible to use cli tools like `Create React App` or `Vue CLI` to
 scaffold a project.
 
 The project will be executed with the following command:
@@ -61,7 +62,7 @@ There are two kinds of unit tests:
 Once the solution is developed and submitted, the platform executes
 verification tests and performs static code analysis.
 
-## Devskiller project descriptor
+## DevSkiller project descriptor
 
 Programming tasks can be configured with the Devskiller project descriptor file:
 

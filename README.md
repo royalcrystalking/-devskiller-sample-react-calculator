@@ -38,6 +38,29 @@ The project will be executed with the following command:
 npm install && npm test
 ```
 
+When configuring the project, make sure that the **test-results.xml** file in JUnit format is returned as the output of the test execution. 
+
+In this case, **jest-junit** is added to **package.json** and used as a test reporter.
+
+```json
+"dependencies": {
+	"jest-junit": "^13.0.0"
+},
+
+"jest-junit": {
+	"outputName": "./test-results.xml",
+	"suiteName": "jest tests",
+	"suiteNameTemplate": "{filepath}",
+	"classNameTemplate": "{classname}",
+	"titleTemplate": "{title}",
+	"ancestorSeparator": " › "
+},
+
+"scripts": {
+	"test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose"
+},
+```
+
 **When compressing the project contents into a ZIP archive please skip
 `./node_modules` directories.**
 
